@@ -2,10 +2,11 @@
 
 @section('content')
 <div class="container">
-        <p>
-             Zaval hogy nem tudsz minden oldalt helyesen olvasni? Konveltáld!
-        </p>
         <div class="col-lg-12 center-block">
+            <p>
+                Zaval hogy nem tudsz minden oldalt helyesen olvasni? Konveltáld!
+                 Lóma teljeszkedik! Poncájz és lajong!
+            </p>
             {{ Form::open(array('url' => '/poncized', 'method' => 'get')) }}
                 @if($errors->has())
                     @foreach($errors->all() as $message)
