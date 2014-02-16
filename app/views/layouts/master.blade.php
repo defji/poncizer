@@ -39,4 +39,10 @@
       ga('create', 'UA-48135213-1', 'poncizer.tk');
       ga('send', 'pageview');
     </script>    
+    <div class="footer navbar-fixed-bottom">
+       <div class="container">
+           <p class="muted credit">&copy; 2014. Kopilájt.
+           </p>
+      </div>
+   </div>
 </html>
