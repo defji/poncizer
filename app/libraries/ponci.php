@@ -11,6 +11,7 @@ class Ponci {
      */
     public static function parseUrl($url) 
     {
+            $url=str_replace("http://http://","http://",$url);
             libxml_use_internal_errors(true);
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);

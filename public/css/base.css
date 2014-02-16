@@ -8,8 +8,12 @@
     height: 48px;
     font-family: 'Russo One', sans-serif;
     font-size: 32px;
-    background: url('../img/poncifej.png');
-    
+    background: url('../img/poncifej.png') no-repeat;
+    padding-left: 55px;
+}
+
+.navbar {
+    background: #003333;
 }
 
 .navbar-brand img {
