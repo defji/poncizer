@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
-    <div class="">
+<div class="">
+    <div class="jumbotron">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -17,7 +17,7 @@
                     @endforeach
                 @endif            
             <div class="input-group">
-            {{ Form::text('url','http://',array('class' => 'form-control','placeholder'=>'Íld ide melyik oldalt szeletnéd látni! (http://-vel)')) }}
+            {{ Form::text('url','http://',array('class' => 'form-control','placeholder'=>'Íld ide melyik oldalt szeletnéd látni! (http://-vel)','id'=>'source_url')) }}
               <span class="input-group-btn">
             {{ Form::submit('Poncize!',array('class'=>'btn btn-info')) }}
               </span>

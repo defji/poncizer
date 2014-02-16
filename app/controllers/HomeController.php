@@ -15,13 +15,12 @@ class HomeController extends BaseController {
 	|
 	*/
 
-        
+      /**
+       * @return type
+       */
         public function showParseUrl()
         {
             $url = Input::get('url');
-            
-
-
             $validator = Validator::make(
                 Input::all(),
                 array('url' => 'URL|required'),
@@ -33,7 +32,6 @@ class HomeController extends BaseController {
 
             if ($validator->fails())
             {
-                //return Redirect::to('/')->withErrors($validator);
                 return Redirect::to('/')->withErrors($validator->messages());
             }            
             try {
@@ -41,5 +39,11 @@ class HomeController extends BaseController {
             } catch (Exception $ex) {
 
             }
+        }
+        
+        
+        public function showIframe() 
+        {
+             return View::make('iframe');
         }
 }
