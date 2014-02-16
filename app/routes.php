@@ -17,9 +17,9 @@ Route::get('/', function()
     return View::make('home');
 });
 
-
-Route::get('/test', 'HomeController@showIframe');
-
+App::missing(function($exception){
+    return View::make('home');
+});
 
 Route::get('/poncized', 'HomeController@showParseUrl');
 

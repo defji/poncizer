@@ -16,7 +16,7 @@
                     @endforeach
                 @endif            
             <div class="input-group">
-            {{ Form::text('url','http://',array('class' => 'form-control','placeholder'=>'Íld ide melyik oldalt szeletnéd látni! (http://-vel)','id'=>'source_url')) }}
+            {{ Form::text('url','http://',array('class' => 'form-control','autocomplete'=>'off','placeholder'=>'Íld ide melyik oldalt szeletnéd látni! (http://-vel)','id'=>'source_url')) }}
               <span class="input-group-btn">
             {{ Form::submit('Poncize!',array('class'=>'btn btn-info')) }}
               </span>
