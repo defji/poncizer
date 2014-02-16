@@ -13,7 +13,10 @@
 }
 
 .navbar {
-    background: #003333;
+}
+
+.logo {
+    margin: 0 auto;
 }
 
 .navbar-brand img {
