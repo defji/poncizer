@@ -5,9 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">        <title>poncizel?</title>
         {{ HTML::script('http://code.jquery.com/jquery-git2.min.js') }}
-        {{ HTML::script('packages/bootstrap/js/bootstrap.min.js'); }}
-        {{ HTML::style('packages/bootstrap/css/bootstrap.min.css'); }}        
-        {{ HTML::style('packages/bootstrap/css/bootstrap-theme.min.css '); }}        
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
         {{ HTML::script('/js/base.js'); }}
         {{ HTML::style('/css/base.css'); }}        
