@@ -26,6 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 	'local' => array('ponci.vm'),
+	'production' =>array('poncizel.tk','poncizer.tk')
 ));
 
 /*
