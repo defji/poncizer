@@ -19,6 +19,7 @@ class Ponci {
             curl_setopt($ch, CURLOPT_HEADER, 0);
             curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);            
             $html = curl_exec($ch);
+            $html=str_replace("%0D%0A","",$html);
             curl_close($ch);            
             
             if(!mb_check_encoding($html, 'UTF8')) {
@@ -28,6 +29,7 @@ class Ponci {
             $html = mb_convert_encoding($html, 'UTF-8', 'UTF-8');
             $html = iconv("UTF-8", "UTF-8//IGNORE", $html);
            
+            
             $dom = new DOMDocument('1.0', 'UTF-8');
             $dom->encoding = 'UTF-8';
             $dom->strictErrorChecking  = FALSE ;
